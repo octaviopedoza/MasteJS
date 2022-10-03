@@ -20,10 +20,12 @@ document.write(datos + "<br>");
 var orden = datos.sort();
 console.log(orden);
 document.write(orden + "<br>");
+
 var invertido = datos.reverse();
 console.log(invertido);
 document.write(invertido + "<br>");
-var long = datos.length;
+
+var long = datos.length;1
 console.log(long);
 document.write("la longitud es: " + long + "<br>");
 //---------------------------------------------------------------------------------------------

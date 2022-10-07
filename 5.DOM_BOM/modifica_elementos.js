@@ -1,7 +1,13 @@
 'use strict'
 
+//Este es el documento que utiliza el DOM para hacer modificanes
 // conseguir elementos por su ID concreto
-var caja = document.getElementById("caja1");
+function cambiaColor(color){
+    caja.style.background = color;
+}
+
+// var caja = document.getElementById("caja1");
+var caja = document.querySelector("#caja1");
 caja.innerHTML = "¡Texto en la caja desde JS";
 caja.style.background = "red";
 caja.style.padding = "20px";

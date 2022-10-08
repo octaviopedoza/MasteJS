@@ -1,7 +1,8 @@
 'use strict'
 
 //Este es el documento que utiliza el DOM para hacer modificanes
-// conseguir elementos por su ID concreto
+
+// conseguir elementos por su ID concreto**********************************************************************
 function cambiaColor(color){
     caja.style.background = color;
 }
@@ -14,19 +15,26 @@ caja.style.padding = "20px";
 caja.style.color = "white";
 caja.className = "hola2";
 
-//conseguir elemento por su etiqueta
+//conseguir elemento por su etiqueta ***************************************************************************
 var todosLosDivs = document.getElementsByTagName('div');
 console.log(todosLosDivs);
 
 var cont = todosLosDivs[2].textContent;
 console.log(cont);
 
-var valor;
-for(valor in todosLosDivs){
+
+for(var valor in todosLosDivs){
     var parrafo = document.createElement("p");
-    var texto = document.createTextNode(valor);
+    var texto = document.createTextNode(todosLosDivs[valor].textContent);
     parrafo.appendChild(texto);
     document.querySelector("#miseccion").appendChild(parrafo);
 }
 
-//conseguir elemento por tu clase css
+//conseguir elemento por tu clase css *****************************************************************************
+var divsRojos = document.getElementsByClassName('rojo');
+divsRojos[0].style.background = "red";
+console.log(divsRojos);
+
+var divsAmarillos = document.getElementsByClassName('amarillo');
+divsAmarillos[0].style.background = "yellow";
+console.log(divsAmarillos);

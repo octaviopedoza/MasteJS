@@ -15,7 +15,7 @@ window.addEventListener('load',function(){
 
         var nombre = document.querySelector("#nombre").value;
         var apellido = document.querySelector("#apellido").value;
-        var edad = parseInt(document.querySelector("#edad").value);
+        var edad = parseInt(document.querySelector("#edad").value);//usamos parseInt para combertir el dato en un integer
 
         console.log(nombre);
         console.log(apellido);
@@ -28,12 +28,19 @@ window.addEventListener('load',function(){
         // caja.innerHTML = string;
         if(nombre.trim() == null || nombre.trim().length == 0){
             alert("el nombre no es valido");
+            document.querySelector("#error_nombre").innerHTML = "El nombre no es valido";
             return false;
+        }else{
+            document.querySelector("#error_nombre").style.display = "none";
         }
+        
         if(apellido.trim() == null || apellido.trim().length == 0){
             alert("El apellido no es valido");
             return false;
+        }else{
+            document.querySelector("#error_apellido").style.display = "none";
         }
+
         if(edad == null || edad <= 0 || isNaN(edad)){
             alert("La edad no es valida");
             return false;

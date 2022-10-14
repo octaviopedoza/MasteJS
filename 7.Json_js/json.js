@@ -11,11 +11,3 @@ var peliculas = [
     pelicula
 ];
 console.log(peliculas);
-
-// var caja_peliculas = document.querySelector("#peliculas");
-// var index;
-// for(index in peliculas){
-//     var p = document.createElement("p");
-//     p.append(peliculas[index].titulo);
-//     caja_peliculas.append(p);
-// }

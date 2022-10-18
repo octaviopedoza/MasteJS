@@ -54,3 +54,24 @@ fetch(link)//solicitamos los datos al api externa
     }
 });
 
+
+//Crear promesas desde Cero
+/* Si hacemos un portero de discoteca que controle el acceso de las personas restringiendo a los menos de 18. Un ejemplo 
+podría ser: 
+
+Las promesas se crean llamando al constructor Promise y pasándole una función que recibe dos parámetros: resolve y reject, 
+que nos permiten indicarle a esta que se resolvió o se rechazó.*/
+function porteroDiscoteca(edad){
+    return new Promise((resolve, reject) => {
+        if(edad >= 18){
+            resolve("Puedes pasar");
+        }
+        else{
+            reject("No puedes pasar");
+        }
+    });
+};
+
+porteroDiscoteca(16)
+.then( (msg) => {console.log(msg);} )
+.catch( (err) => {console.log(err);});

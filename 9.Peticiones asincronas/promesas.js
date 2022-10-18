@@ -50,7 +50,7 @@ fetch(link)//solicitamos los datos al api externa
         let nombre = document.createElement("h3");//Creamos en el documento los elementos h3
             nombre.innerHTML = i + ".- " + x[i].name + " " + x[i].username;//pasamo los datos a mostrar
             div_ejercicio.appendChild(nombre);//Los mostramos en e div seleccionado
-        console.log(x[i].name);//imprimimos los mismos resultados pero en consola
+       // console.log(x[i].name);//imprimimos los mismos resultados pero en consola
     }
 });
 
@@ -60,7 +60,14 @@ fetch(link)//solicitamos los datos al api externa
 podría ser: 
 
 Las promesas se crean llamando al constructor Promise y pasándole una función que recibe dos parámetros: resolve y reject, 
-que nos permiten indicarle a esta que se resolvió o se rechazó.*/
+que nos permiten indicarle a esta que se resolvió o se rechazó.
+
+Actualmente las promesas suelen trabajarse con arrow function (funciones de flecha) ya que son la manera moderna de trabajar. 
+Hacen lo mismo con menos código y de una forma más visual. 
+
+Si combinamos una función y una promesa con arrow function devemos aregrar un return para tener la posivilidad de almacenar 
+las promesas dentro de una función y podremos pasarle parámetros y además, estarán mejor estructuradas.*/
+
 function porteroDiscoteca(edad){
     return new Promise((resolve, reject) => {
         if(edad >= 18){

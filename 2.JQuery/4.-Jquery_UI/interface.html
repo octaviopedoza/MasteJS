@@ -46,11 +46,56 @@
             height: 300px;
             border: 3px solid red;
         }
-
+        .elemento{
+            background: pink;
+            float: none;
+            display: none;
+        }
     </style>
+    
 
 </head>
 <body>
+
+    <hr>
+    <h3>Taps</h3>
+    <div id="pestanas">
+        <ul>
+            <li><a href="#tabs-1">Pestaña 1</a></li>
+            <li><a href="#tabs-2">Pestaña 2</a></li>
+            <li><a href="#tabs-3">Pestaña 3</a></li>
+        </ul>
+        <div id="tabs-1">Hola soy la primer pestaña</div>
+        <div id="tabs-2">Hola soy la segunda pestaña</div>
+        <div id="tabs-3">Hola soy la tercer pestaña</div>
+    </div>
+    <hr>
+
+    <hr>
+    <h3>Calendario</h3>
+    Calendario: <input type="text" id="calendario">
+    <hr>
+
+    <hr>
+    <h3>Tooltip</h3>
+    <a href="#" title="Acceder a seccion de mis datos de la web">Mis datos</a><br>
+    <a href="#" title="Login a mi web">Login</a><br>
+    <a href="#" title="Ver todos los elementos de la web">Mis elementos</a>
+    <hr>
+
+    <hr>
+    <h3>Cuadros de dialogo</h3>
+    <button id="lanzar-popup">Lanzame</button>
+    <div id="popup" title="Mi primer pop-up" style="display: none;">
+        <p>en este curso e aprendido mucho de jQuery</p>
+    </div>
+    <hr>
+
+    <button id="mostrar">
+        Mostrar
+    </button><br><br>
+
+    <div class="caja-efectos elemento"></div>
 
     <div id="elemento-movido"></div><br>
     <div id="area">

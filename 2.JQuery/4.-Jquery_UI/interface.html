@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery UI</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+    <script src="jquery-ui/jquery-ui.min.js"></script>
+    <script src="jquery_ui.js"></script>
+
+    <style>
+        .elemento{
+            width: 300px;
+            height: 200px;
+            border: 4px solid black;
+            background: lightblue;
+            margin: 20px;
+            float: left;
+        }
+        /* estilos para lista seleccionable */
+        .lista-seleccionable li{
+            width: 80%;
+            padding: 20px;
+            border: 1px solid goldenrod;
+            list-style: none;
+            cursor: pointer; /*convertimos el cursos en una mano*/
+            background: white;
+        }
+        /* Estados que asigna ui al seleccionar un elemento */
+        ul .ui-selecting{
+            background: gray;
+        }
+        ul .ui-selected{
+            background: gray;
+        }
+        #elemento-movido{
+            width: 100px;
+            height: 100px;
+            border: 3px solid black;
+        }
+        #area{
+            width: 300px;
+            height: 300px;
+            border: 3px solid red;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div id="elemento-movido"></div><br>
+    <div id="area">
+
+    </div>
+
+    <ul class="lista-seleccionable">
+        <li>GTA</li>
+        <li>Need For Speed</li>
+        <li>COD Movil</li>
+        <li>Super Smash Bros</li>
+    </ul>
+    
+    <div class="elemento">
+        Hola soy un elemento de la web<br>
+    </div>
+    <div class="elemento">
+        Hola soy un elemento de la web<br>
+    </div>
+    <div class="elemento">
+        Hola soy un elemento de la web<br>
+    </div>
+    <br>
+    
+
+</body>
+</html>

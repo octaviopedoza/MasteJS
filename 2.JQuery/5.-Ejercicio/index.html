@@ -5,9 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto con JS</title>
-
+    <!-- css script -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- jQuery script -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../4.-Jquery_UI/jquery-ui/jquery-ui.min.js">
+
+    <!-- Mis script -->
     <script src="js/main.js"></script>
+
+    <!-- js de slider ------------------------------------------------------------------------------>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+        $('.slider').bxSlider();
+        });
+    </script>
+    
 </head>
 <body>
     <section id="global">
@@ -31,6 +49,11 @@
 
         <!-- Slider --------------------------------------------------------------------->
         <div id="slider">
+            <div class="bxslider">
+                <div><img src="img/hojas.jpg" title="hojas"></div>
+                <div><img src="img/rojo.jpg" title="rojo"></div>
+                <div><img src="img/cielo.jpg" title="cielo"></div>
+            </div>
         </div>
 
         <!-- Contenido ------------------------------------------------------------------>

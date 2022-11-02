@@ -15,4 +15,11 @@ cualquiera = 77;
 var lenguajes: Array <string> = ["PHP", "JS", "HTML"];
 let years: number[] = [12, 13, 15];
 
-console.log(cadena, numero, verdaro_falso, cualquiera, lenguajes, years);
+//Multiple tipo de datos
+var cadena2: string | number = 15;
+
+//Tipos de datos personalizados
+type alfanumerico = string | number;
+var cadena3: alfanumerico = "hola";
+
+console.log(cadena, numero, verdaro_falso, cualquiera, lenguajes, years, cadena2, cadena3);

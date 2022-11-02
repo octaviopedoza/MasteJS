@@ -10,4 +10,7 @@ cualquiera = 77;
 //Array
 var lenguajes = ["PHP", "JS", "HTML"];
 var years = [12, 13, 15];
-console.log(cadena, numero, verdaro_falso, cualquiera, lenguajes, years);
+//Multiple tipo de datos
+var cadena2 = 15;
+var cadena3 = "hola";
+console.log(cadena, numero, verdaro_falso, cualquiera, lenguajes, years, cadena2, cadena3);

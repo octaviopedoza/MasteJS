@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 
+// Component es un decorador
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'aprendiendo-angular';
+  title = 'Mi primer app Angular';
 }

@@ -2,7 +2,22 @@
 <h2>{{titulo}}</h2>
 <p>{{listado}}</p>
     <ul>
-        <li>GTA</li>
-        <li>Zelda</li>
-        <li>Mario bross</li>
+        <li *ngFor="let juego of videojuego">{{juego.nombre}} - <strong>{{juego.marca}}</strong>
+            <span *ngIf="juego.marca === 'Nintendo'"
+            [class.nombre]="juego.nombre === 'Microsoft'"
+            > En oferta </span>
+        </li>
     </ul>
+    <hr>
+
+<p>Solicitar nuevo juego:</p>
+<p>
+    <input type="text" [(ngModel)]="solicitar_juego" />
+    <button (click)="getJuegos()">Mostrar juego solicitado</button>
+    <button (click)="addJuegos()">Solicitar nuevo juego</button>
+</p>
+
+<h2>Juegos mas solicitados</h2>
+<ul>
+    <li *ngFor="let item of juegos; let indice = index">{{this.juegos[indice]}}</li>
+</ul>

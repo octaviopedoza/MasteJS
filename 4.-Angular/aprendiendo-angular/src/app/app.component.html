@@ -329,12 +329,12 @@
 
   <!-- Highlight Card -->
   <div class="card highlight-card card-small">
-    <span>{{ title }}</span>
+  <span [ngStyle]="{color: config.color}">{{ title }}</span>
   </div>
+  <h2><span>{{descripcion}}</span></h2>
 
+  <cursos></cursos>
   <videojuego></videojuego>
-  <cosina></cosina>
-
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->

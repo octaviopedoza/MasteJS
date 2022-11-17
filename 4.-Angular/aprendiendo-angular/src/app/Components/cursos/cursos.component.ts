@@ -1,4 +1,5 @@
 import { Component, OnInit, DoCheck, OnDestroy} from '@angular/core';
+import { Router, ActivatedRoute, Params } from '@angular/router';
 
 @Component({
   selector: 'cursos',
@@ -9,7 +10,10 @@ export class CursosComponent implements OnInit, DoCheck, OnDestroy {
   public titulo: string;
   public parrafo: string;
 
-  constructor() { 
+  constructor(
+    private _route: ActivatedRoute,
+    private _router: Router,
+  ){ 
     this.titulo = "Componente de cursos listo";
     this.parrafo = "Componente trabajando";
 
@@ -18,6 +22,7 @@ export class CursosComponent implements OnInit, DoCheck, OnDestroy {
 
   ngOnInit(): void {
     console.log("OnInit ejecutado!!");
+    this._route.params.subscribe()
   }
 
   ngDoCheck(): void {

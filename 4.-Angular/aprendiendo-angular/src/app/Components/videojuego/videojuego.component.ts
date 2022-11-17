@@ -1,6 +1,6 @@
 // import del objeto component y le indicamos la ruta donde esta el componente
 import { Component, OnInit } from "@angular/core";
-import { Videojuego } from "../models/videojuego";
+import { Videojuego } from "../../models/videojuego";
 
 // definimos el decorador, los decoradores de clase nunca se cierran con ";"
 @Component({

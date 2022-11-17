@@ -333,9 +333,13 @@
   </div>
   <h2><span>{{descripcion}}</span></h2>
   <nav>
-    <a [routerLink]="['/']" >Home</a>
-    <a [routerLink]="['/cosina']">Cosina</a>
-    <a [routerLink]="['/Cursos]">cursos</a>
+    <a [routerLink]="['/']" [routerLinkActive]="['active']" >Home</a>
+    &nbsp;
+    <a [routerLink]="['/cosina']" [routerLinkActive]="['active']">Cosina</a>
+    &nbsp;
+    <a [routerLink]="['/cursos']" [routerLinkActive]="['active']">Cursos</a>
+    &nbsp;
+    <a [routerLink]="['/videojuego']" [routerLinkActive]="['active']">Videojuego</a>
   </nav>
 
   <!-- <cursos></cursos>

@@ -332,9 +332,14 @@
   <span [ngStyle]="{color: config.color}">{{ title }}</span>
   </div>
   <h2><span>{{descripcion}}</span></h2>
+  <nav>
+    <a [routerLink]="['/']" >Home</a>
+    <a [routerLink]="['/cosina']">Cosina</a>
+    <a [routerLink]="['/Cursos]">cursos</a>
+  </nav>
 
-  <cursos></cursos>
-  <videojuego></videojuego>
+  <!-- <cursos></cursos>
+  <videojuego></videojuego> -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
